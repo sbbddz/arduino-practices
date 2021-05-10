@@ -13,6 +13,8 @@ void setup() {
 
 void loop() {
   delay(2500);
+  Serial.print("Humedad: ");
   Serial.println(sensor.readHumidity());
+  Serial.print("Temperatura: ");
   Serial.println(sensor.readTemperature());
 }
